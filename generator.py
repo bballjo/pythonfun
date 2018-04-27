@@ -1,5 +1,5 @@
 
-import test
+import commands
 import commandGenerator
 
 import random
