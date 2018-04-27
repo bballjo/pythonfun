@@ -12,7 +12,7 @@ wordsWithParenteses = [
 ]
 
 wordsWithSemicolons = [
-	'if', 'for', 'elif', 'for', 'else'
+	'if', 'for', 'elif', 'for', 'else', 'while'
 ]
 
 def generateTab():
