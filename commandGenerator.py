@@ -1,4 +1,4 @@
-import test
+import commands
 
 import random
 import string
@@ -10,9 +10,9 @@ def generateCommand():
 def WriteFile(name):
     file = open(name,'w') 
 
-    file.write(test.Line('x = ' + str(random.choice([1,2,3,4,5,6,7,8,9]))))
-    file.write(test.If('x == ' + str(random.choice([1,2,3,4,5,6,7,8,9]))))
-    file.write(test.Print("'x is \" + str(x)  + \"")) 
+    file.write(commands.Line('x = ' + str(random.choice([1,2,3,4,5,6,7,8,9]))))
+    file.write(commands.If('x == ' + str(random.choice([1,2,3,4,5,6,7,8,9]))))
+    file.write(commands.Print("'x is \" + str(x)  + \"")) 
 
     file.close() 
 
