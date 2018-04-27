@@ -15,17 +15,26 @@ wordsWithSemicolons = [
 	'if', 'for', 'elif', 'for', 'else', 'while'
 ]
 
-def generateTab():
+def Tab():
 	return '\t'
 
-def generateLine(str):
-	return str + '\n'
+def Line(line):
+	return str(line) + '\n'
 
-def generatePrint(word):
-	return 'print("' + word + '"\n)'
-	return 
-	
+def Print(word):
+	return 'print("' + str(word) + '"\n)'
 
-def generateIf(expr):
-	return 'if ' + expr + ':\n'
+def For(array):
+	return 'for item in ' + str(array) + ':\n' + Tab()
 	
+def If(expr):
+	return 'if ' + str(expr) + ':\n' + Tab()
+	 
+def IfEl(expr):
+	return 'ifel ' + str(expr) + ':\n' + Tab()
+
+def Else():
+	return 'else:' + Tab()
+
+def While(expr):
+	return 'while ' + str(expt) + ':\n' + Tab()
